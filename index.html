@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090a0d">
+<meta name="description" content="GILL CAR SERVICES — Auckland mobile car servicing, repairs, washing and compound care. We come to your home or workplace.">
+<title>GILL CAR SERVICES — Auckland Mobile Car Service</title>
+<style>
+:root{--bg:#07090c;--panel:#10141a;--panel2:#151a21;--text:#f5f7fa;--muted:#aeb7c3;--red:#ff1738;--red2:#b90021;--line:rgba(255,255,255,.12);--shadow:0 22px 60px rgba(0,0,0,.42)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 70% 0%,#1b2028 0,#07090c 38%,#050608 100%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(5,7,10,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.04em}.brand-mark{width:43px;height:43px;border:2px solid var(--red);border-radius:50%;display:grid;place-items:center;color:var(--red);font-size:20px}.brand span{display:block}.brand-name{font-size:17px}.brand-sub{font-size:9px;letter-spacing:.22em;color:#bfc6ce}.navlinks{display:flex;gap:25px;font-size:13px;font-weight:700;color:#dbe0e5}.navlinks a:hover{color:#fff}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--red);color:#fff;padding:13px 21px;border-radius:999px;font-weight:900;font-size:13px;border:1px solid rgba(255,255,255,.14);box-shadow:0 10px 30px rgba(255,23,56,.22);transition:.25s}.btn:hover{transform:translateY(-2px);background:#ff2947}.btn.ghost{background:transparent;border-color:var(--red);box-shadow:none}.menu{display:none;background:none;border:0;color:#fff;font-size:28px}
+.hero{min-height:650px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(4,6,9,.96) 0%,rgba(4,6,9,.82) 40%,rgba(4,6,9,.2) 100%),url("assets/customer-review-bmw.jpeg") center/cover}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:3px;background:linear-gradient(90deg,transparent,var(--red),transparent)}.hero-content{padding:85px 0;max-width:690px;position:relative;z-index:2}.eyebrow{font-size:12px;letter-spacing:.27em;color:#d5dbe2;font-weight:800}.eyebrow b{color:var(--red)}h1{font-size:clamp(46px,7vw,86px);line-height:.92;margin:17px 0 18px;letter-spacing:-.055em}.accent{color:var(--red)}.hero h2{font-size:clamp(19px,2.5vw,28px);margin:0 0 12px}.hero p{color:#cbd2da;max-width:600px;font-size:17px}.badge{display:inline-flex;align-items:center;gap:8px;margin:18px 0 24px;padding:10px 15px;border:1px solid rgba(255,23,56,.65);border-radius:999px;background:rgba(255,23,56,.08);font-weight:900;color:#fff}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:35px}.stat{padding:17px;border:1px solid var(--line);background:rgba(10,12,16,.65);border-radius:14px}.stat strong{display:block}.stat small{color:var(--muted)}
+section{padding:90px 0}.section-head{text-align:center;margin-bottom:38px}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.22em}.section-head h2{font-size:clamp(30px,4vw,50px);margin:8px 0}.section-head p{color:var(--muted);max-width:680px;margin:auto}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:linear-gradient(180deg,#151a21,#0d1015);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);transition:.3s;display:flex;flex-direction:column}.card:hover{transform:translateY(-6px);border-color:rgba(255,23,56,.55)}.card-img{height:190px;overflow:hidden;position:relative}.card-img img{width:100%;height:100%;object-fit:cover;transition:.45s}.card:hover .card-img img{transform:scale(1.06)}.card-body{padding:20px}.tag{display:inline-block;color:#fff;background:var(--red);font-size:10px;font-weight:900;padding:5px 8px;border-radius:999px;margin-bottom:10px}.card h3{margin:0 0 4px;font-size:20px}.price{font-size:20px;color:var(--red);font-weight:900;margin-bottom:12px}.card ul{padding:0;margin:0 0 18px;list-style:none;color:#cbd2da;font-size:13px}.card li{margin:7px 0}.card li:before{content:"✓";color:var(--red);font-weight:900;margin-right:8px}.card .btn{margin-top:auto;align-self:flex-start;padding:10px 16px;font-size:12px}
+.wide-card{grid-column:span 2}.wash{display:grid;grid-template-columns:1.1fr .9fr;overflow:hidden;border:1px solid rgba(255,23,56,.6);border-radius:20px;background:#0c1015}.wash-img{min-height:330px}.wash-img img{width:100%;height:100%;object-fit:cover}.wash-copy{padding:40px}.wash-copy h3{font-size:32px;margin:8px 0}.wash-copy p{color:var(--muted)}.pills{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}.pill{border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:12px}
+.mobile{background:linear-gradient(135deg,#11161d,#090b0f);border:1px solid var(--line);border-radius:22px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:30px}.mobile h2{font-size:38px;margin:7px 0}.mobile p{color:var(--muted)}.mobile-list{display:grid;gap:12px}.mobile-item{padding:16px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025)}.mobile-item b{display:block;margin-bottom:3px}
+.brands{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}.brand-pill{min-width:120px;text-align:center;padding:18px 14px;border:1px solid var(--line);border-radius:14px;color:#e9edf1;font-weight:900;background:#0e1217}
+.reviews{position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(4,6,9,.94),rgba(4,6,9,.56),rgba(4,6,9,.90)),url("assets/customer-review-bmw.jpeg") center/cover}.review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.review{background:rgba(7,9,12,.75);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:25px}.stars{color:#ffd22e;letter-spacing:3px}.review p{color:#e2e6eb}.review small{color:#aeb7c3}
+.booking{background:linear-gradient(180deg,#0a0c10,#11151b)}form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:#0d1116;padding:28px;border:1px solid var(--line);border-radius:20px}input,select,textarea{width:100%;padding:14px 15px;background:#080a0e;border:1px solid var(--line);border-radius:10px;color:#fff;font:inherit}textarea{min-height:130px;resize:vertical}.full{grid-column:1/-1}label{font-size:12px;font-weight:800;color:#dce2e8;margin-bottom:5px;display:block}.field{display:flex;flex-direction:column}.form-note{color:#88929e;font-size:12px}.form-status{display:none;padding:12px;border-radius:10px;background:rgba(42,200,120,.12);border:1px solid rgba(42,200,120,.4);color:#bdf3d5}
+footer{padding:32px 0;border-top:1px solid var(--line);background:#050608}.footer-grid{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-grid small{color:#89939e}.footer-brand{font-weight:900}.footer-brand span{color:var(--red)}
+@media(max-width:1050px){.cards{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.menu{display:block}.mobile{grid-template-columns:1fr}.hero{min-height:610px}}
+@media(max-width:650px){.nav{height:66px}.brand-name{font-size:14px}.brand-sub{font-size:7px}.brand-mark{width:38px;height:38px}.hero{min-height:760px;background-position:62% center}.hero-content{padding:65px 0}.hero p{font-size:15px}.stats{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.wide-card{grid-column:auto}.wash{grid-template-columns:1fr}.wash-img{min-height:240px}.wash-copy{padding:28px}.mobile{padding:25px}.review-grid{grid-template-columns:1fr}form{grid-template-columns:1fr}.full{grid-column:auto}section{padding:65px 0}.footer-grid{flex-direction:column;text-align:center}.btn{width:auto}}
+
+.review-form-wrap{margin-top:28px;padding:28px;border:1px solid rgba(255,255,255,.14);border-radius:20px;background:rgba(7,9,12,.78);backdrop-filter:blur(12px)}
+.review-form-copy{text-align:center;margin-bottom:20px}.review-form-copy h3{font-size:27px;margin:6px 0}.review-form-copy p{color:var(--muted);margin:0}
+.review-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:transparent;padding:0;border:0}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="brand" href="#home"><div class="brand-mark">G</div><div><span class="brand-name">GILL CAR SERVICES</span><span class="brand-sub">AUCKLAND • NEW ZEALAND</span></div></a>
+<nav class="navlinks"><a href="#home">HOME</a><a href="#services">SERVICES</a><a href="#mobile">MOBILE SERVICE</a><a href="#brands">BRANDS</a><a href="#reviews">REVIEWS</a><a href="#booking">BOOKING</a></nav>
+<a class="btn" href="#booking">BOOK NOW</a><button class="menu" aria-label="Menu">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="container hero-content">
+<div class="eyebrow">PROFESSIONAL <b>•</b> RELIABLE <b>•</b> MOBILE</div>
+<h1><span class="accent">GILL</span> CAR<br>SERVICES</h1>
+<h2>Professional Mobile Car Service — We Come To You.</h2>
+<p>From routine servicing and brake work to washing, interior cleaning and compound care, we bring professional vehicle care directly to your home or workplace.</p>
+<div class="badge">📍 AUCKLAND • NEW ZEALAND &nbsp; | &nbsp; MOBILE SERVICE ONLY</div>
+<div class="hero-actions"><a class="btn" href="#booking">BOOK YOUR SERVICE →</a><a class="btn ghost" href="#services">VIEW SERVICES</a></div>
+<div class="stats"><div class="stat"><strong>Home & Workplace</strong><small>We come to you</small></div><div class="stat"><strong>Service + Wash</strong><small>One mobile team</small></div><div class="stat"><strong>No on-site visit</strong><small>Convenient on-site care</small></div></div>
+</div></section>
+
+<section id="services"><div class="container"><div class="section-head"><div class="kicker">WHAT WE DO</div><h2>OUR SERVICES</h2><p>Professional automotive care delivered at your home or workplace in Auckland.</p></div>
+<div class="cards">
+<article class="card"><div class="card-img"><img src="assets/major-service.jpeg" alt="Mechanic working on a car engine"></div><div class="card-body"><span class="tag">MAJOR SERVICE</span><h3>Major Service</h3><div class="price">$400 – $900+</div><ul><li>Full service checks included</li><li>Coolant flush</li><li>Brake fluid flush</li><li>Transmission fluid change</li></ul><a class="btn" href="#booking">BOOK NOW →</a></div></article>
+<article class="card"><div class="card-img"><img src="assets/basic-service.jpeg" alt="Vehicle fluid maintenance"></div><div class="card-body"><span class="tag">BASIC / INTERIM</span><h3>Basic / Interim Service</h3><div class="price">$150 – $250</div><ul><li>Oil and filter replacement</li><li>Fluid top-ups</li><li>20–30 point safety check</li></ul><a class="btn" href="#booking">BOOK NOW →</a></div></article>
+<article class="card"><div class="card-img"><img src="assets/full-service.jpeg" alt="Mechanic inspecting vehicle brakes"></div><div class="card-body"><span class="tag">FULL SERVICE</span><h3>Full Service</h3><div class="price">$280 – $450</div><ul><li>All basic checks</li><li>Air/cabin filters</li><li>Spark plugs</li><li>Detailed brake/suspension inspection</li></ul><a class="btn" href="#booking">BOOK NOW →</a></div></article>
+<article class="card"><div class="card-img"><img src="assets/basic-service.jpeg" alt="Oil service on a vehicle"></div><div class="card-body"><span class="tag">OIL CHANGE</span><h3>Oil Change Only</h3><div class="price">$80 – $150</div><ul><li>Oil replacement</li><li>Filter replacement</li><li>Quick service at your location</li></ul><a class="btn" href="#booking">BOOK NOW →</a></div></article>
+<article class="card"><div class="card-img"><img src="assets/battery-replacement.jpeg" alt="Mechanic replacing a car battery"></div><div class="card-body"><span class="tag">BATTERY</span><h3>Battery Replacement</h3><div class="price">$120 – $250</div><ul><li>New high-performance battery</li><li>Testing & system check</li><li>Old battery disposal</li></ul><a class="btn" href="#booking">BOOK NOW →</a></div></article>
+</div></div></section>
+
+<section><div class="container"><div class="wash"><div class="wash-img"><img src="assets/compound-service.png" alt="Car compound and paint polishing service"></div><div class="wash-copy"><div class="kicker">ADD-ON CAR CARE</div><h3>Interior & Exterior Wash<br>Compound Service Available</h3><p>Give your vehicle a cleaner, shinier and more protected finish. Ask for wash, interior cleaning or compound care when booking your mobile service.</p><div class="pills"><span class="pill">Interior Wash</span><span class="pill">Exterior Wash</span><span class="pill">Compound</span><span class="pill">Paint Care</span></div><a class="btn" href="#booking">ADD TO BOOKING →</a></div></div></div></section>
+
+<section id="mobile"><div class="container"><div class="mobile"><div><div class="kicker">MOBILE SERVICE ONLY</div><h2>WE COME TO YOU.</h2><p>GILL CAR SERVICES operates as a mobile service. We do not ask customers to visit a mobile service. Choose your home or workplace when booking and we will arrange the service at your location.</p><a class="btn" href="#booking">CHOOSE YOUR LOCATION →</a></div><div class="mobile-list"><div class="mobile-item"><b>🏠 Home Service</b><span>Convenient servicing at your home.</span></div><div class="mobile-item"><b>🏢 Workplace Service</b><span>Keep your day moving while we work on your vehicle.</span></div><div class="mobile-item"><b>🔧 Professional Vehicle Care</b><span>Servicing, repairs, washing and compound care.</span></div></div></div></div></section>
+
+<section id="brands"><div class="container"><div class="section-head"><div class="kicker">VEHICLES WE SERVICE</div><h2>MAJOR BRANDS</h2><p>We provide mobile vehicle care across a wide range of popular makes.</p></div><div class="brands">
+<div class="brand-pill">BMW</div><div class="brand-pill">Mercedes-Benz</div><div class="brand-pill">Audi</div><div class="brand-pill">Volkswagen</div><div class="brand-pill">Toyota</div><div class="brand-pill">Honda</div><div class="brand-pill">Nissan</div><div class="brand-pill">Mazda</div><div class="brand-pill">Ford</div><div class="brand-pill">Hyundai</div><div class="brand-pill">Suzuki</div><div class="brand-pill">Kia</div>
+</div></div></section>
+
+<section class="reviews" id="reviews">
+<div class="container">
+  <div class="section-head">
+    <div class="kicker">REAL PEOPLE • REAL EXPERIENCES</div>
+    <h2>CUSTOMER REVIEWS</h2>
+    <p>See what customers say about their mobile car service experience with GILL CAR SERVICES.</p>
+  </div>
+
+  <div class="review-grid">
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>Professional, reliable and convenient mobile service. The whole process was easy from booking to completion.</p>
+      <small>— Customer Review</small>
+    </div>
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>Great attention to detail and honest advice. Having the service done at home made everything much easier.</p>
+      <small>— Customer Review</small>
+    </div>
+  </div>
+
+  <div class="review-form-wrap">
+    <div class="review-form-copy">
+      <div class="kicker">SHARE YOUR EXPERIENCE</div>
+      <h3>Leave a Customer Review</h3>
+      <p>After your service, customers can share their experience and rating.</p>
+    </div>
+    <form class="review-form" action="https://formsubmit.co/manmeetgill17593@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="GILL CAR SERVICES — New Customer Review">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://manmeet5911y.github.io/Gill-Car-Serves-ac-nz/">
+      <div class="field">
+        <label for="review-name">YOUR NAME</label>
+        <input id="review-name" name="Customer Name" required placeholder="Your name">
+      </div>
+      <div class="field">
+        <label for="review-rating">RATING</label>
+        <select id="review-rating" name="Rating" required>
+          <option value="">Select rating</option>
+          <option>★★★★★ — 5 Stars</option>
+          <option>★★★★☆ — 4 Stars</option>
+          <option>★★★☆☆ — 3 Stars</option>
+          <option>★★☆☆☆ — 2 Stars</option>
+          <option>★☆☆☆☆ — 1 Star</option>
+        </select>
+      </div>
+      <div class="field full">
+        <label for="review-text">YOUR REVIEW</label>
+        <textarea id="review-text" name="Review" required placeholder="Tell us about your experience..."></textarea>
+      </div>
+      <div class="full"><button class="btn" type="submit">SUBMIT REVIEW →</button></div>
+    </form>
+  </div>
+</div>
+</section>
+
+<section class="booking" id="booking"><div class="container"><div class="section-head"><div class="kicker">BOOK YOUR MOBILE SERVICE</div><h2>REQUEST A BOOKING</h2><p>Tell us about your vehicle and choose home or workplace service. Your request will be sent privately to our booking email.</p></div>
+<form action="https://formsubmit.co/manmeetgill17593@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="GILL CAR SERVICES — New Booking Request"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="https://manmeet5911y.github.io/Gill-Car-Serves-ac-nz/">
+<div class="field"><label for="name">FULL NAME</label><input id="name" name="Name" required placeholder="Your name"></div>
+<div class="field"><label for="email">EMAIL</label><input id="email" type="email" name="Customer Email" required placeholder="you@example.com"></div>
+<div class="field"><label for="vehicle">VEHICLE / MODEL</label><input id="vehicle" name="Vehicle" required placeholder="e.g. BMW X5 2020"></div>
+<div class="field"><label for="service">SERVICE</label><select id="service" name="Service" required><option value="">Select service</option><option>Major Service</option><option>Basic / Interim Service</option><option>Full Service</option><option>Oil Change Only</option><option>Battery Replacement</option><option>Interior & Exterior Wash</option><option>Compound / Paint Care</option></select></div>
+<div class="field"><label for="location">SERVICE LOCATION</label><select id="location" name="Service Location" required><option value="">Choose location</option><option>Home</option><option>Workplace</option></select></div>
+<div class="field"><label for="date">PREFERRED DATE</label><input id="date" type="date" name="Preferred Date" required></div>
+<div class="field"><label for="time">PREFERRED TIME</label><input id="time" type="time" name="Preferred Time" required></div>
+<div class="field full"><label for="message">MESSAGE</label><textarea id="message" name="Message" placeholder="Tell us anything important about your vehicle or service request."></textarea></div>
+<div class="full"><button class="btn" type="submit">SEND BOOKING REQUEST →</button><div class="form-note">Your email address is used only for the booking request. GILL CAR SERVICES does not display its receiving email publicly on this page.</div></div>
+</form></div></section>
+</main>
+<footer><div class="container footer-grid"><div><div class="footer-brand">GILL <span>CAR SERVICES</span></div><small>Mobile Service • Home & Workplace • Auckland, New Zealand</small></div><small>© 2026 GILL CAR SERVICES • Your Vehicle • Our Priority</small></div></footer>
+</body></html>
